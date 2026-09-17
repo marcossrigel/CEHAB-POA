@@ -15,7 +15,7 @@ if (!$isBruno) {
   exit('Sem permissão');
 }
 
-require_once __DIR__ . '/../referencia.php';
+require_once __DIR__ . '/../config.php';
 
 $poa->query("UPDATE notificacoes_edicao SET lida = 1, lida_em = NOW() WHERE lida = 0");
 

@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 session_set_cookie_params(['path' => '/']);
 if (session_status() !== PHP_SESSION_ACTIVE) session_start();
 
-require_once __DIR__ . '/../referencia.php';
+require_once __DIR__ . '/../config.php';
 
 // valida token (1 envio só)
 $token = $_POST['form_token'] ?? '';

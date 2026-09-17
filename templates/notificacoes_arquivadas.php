@@ -24,7 +24,7 @@ if (!$isAdmin) {
   exit;
 }
 
-require_once __DIR__ . '/../referencia.php';
+require_once __DIR__ . '/../config.php';
 
 $r = $poa->query("
   SELECT n.*, c.codigo_poa, c.numero_contrato

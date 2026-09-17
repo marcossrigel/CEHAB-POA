@@ -9,7 +9,7 @@ if (!isset($_SESSION['usuario'])) {
     exit('Sessão não iniciada.');
 }
 
-require_once __DIR__ . '/../referencia.php';
+require_once __DIR__ . '/../config.php';
 
 $nomeUsuario  = trim($_SESSION['usuario']['nome'] ?? '');
 $loginUsuario = trim($_SESSION['usuario']['login'] ?? '');

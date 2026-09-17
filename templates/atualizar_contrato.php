@@ -11,7 +11,7 @@ if (!isset($_SESSION['usuario'])) {
   exit("Sessão não iniciada. Acesse via login.");
 }
 
-require_once __DIR__ . '/../referencia.php';
+require_once __DIR__ . '/../config.php';
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
   http_response_code(405);
